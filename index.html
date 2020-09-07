@@ -37,8 +37,6 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-
-<script src="/js/saveEmail.js"></script>
 	
 </head>
 <body >
@@ -173,7 +171,7 @@
                         <input type="email" name="email" class="form-control" required placeholder="Contact email:">
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info">Confirm </button>
+                        <button onclick="saveEmail()" class="btn btn-info">Confirm </button>
                     </div>
                     </form>
                 </div>
@@ -244,6 +242,23 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
+//SendEmail
+function saveEmail(email) {
+    var emailObject = {
+        email: email
+    };
+
+    firebase.database().ref('email-entries').push().set(emailObject)
+        .then(function(snapshot) {
+            success(); // some success method
+        }, function(error) {
+            console.log('error' + error);
+            error(); // some error method
+        });
+}
+
+saveEmail(email);
 </script>
 	
 </body>
