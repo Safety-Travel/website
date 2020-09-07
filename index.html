@@ -31,6 +31,14 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
     <link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
     <link rel="shortcut icon" href="images/fav.png">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+	
 </head>
 <body >
     <!-- Preloader Starts -->
@@ -219,7 +227,23 @@
     <script src="js/scrollReveal.js" type="text/javascript"></script>
     <script src="js/jquery.downCount.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
-	
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDYzKM1NrVpxfq2Ry5Lpot4Zul7ezLgy3M",
+    authDomain: "safety-email-bc1bc.firebaseapp.com",
+    databaseURL: "https://safety-email-bc1bc.firebaseio.com",
+    projectId: "safety-email-bc1bc",
+    storageBucket: "safety-email-bc1bc.appspot.com",
+    messagingSenderId: "847608044094",
+    appId: "1:847608044094:web:3647e575b4a842b6f34f6f",
+    measurementId: "G-CJZ7JNYX4N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 	
 </body>
 </html>
