@@ -227,14 +227,15 @@
 
 <p>You can translate the content of this page by selecting a language in the select box.</p>
 
-<div id="google_translate_element"></div>
+<div id="google_translate_element"> </div>
 <script>
+    $(window).load(
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
             { pageLanguage: 'en' },
             'google_translate_element'
         );
-    }
+    })
 </script>
 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	
