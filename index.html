@@ -229,13 +229,13 @@
 
 <div id="google_translate_element"> </div>
 <script>
-    $(window).load(
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
             { pageLanguage: 'en' },
             'google_translate_element'
         );
-    })
+    }
+    googleTranslateElementInit()
 </script>
 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	
