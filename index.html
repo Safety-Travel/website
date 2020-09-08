@@ -8,8 +8,9 @@
     <meta name="author" content="">
     <title>Safety Travel</title>
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" />    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Google Web Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
@@ -31,13 +32,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
     <link rel="apple-touch-icon-precomposed" href="images/fav-57.png">
     <link rel="shortcut icon" href="images/fav.png">
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-	
 </head>
 <body >
     <!-- Preloader Starts -->
@@ -104,22 +98,25 @@
                 <div class="main-head">
                     <h2 data-scroll-reveal="enter top and move 50px over 1.2s">About Us</h2>
 					<h5 data-scroll-reveal="enter bottom and move 50px over 1.4s">
-                    Safety Travel, an airport connected health diagnostic and prevention system that enables airports
+                    Safety Travel, is building a connected health diagnostic and prevention system that enables airports
                     and ports to secure the health journey of their travelers.
                          </h5>
                     <br />
                     <p data-scroll-reveal="enter bottom and move 50px over 1.4s">
-              		 It also allows to :
+                        It also allow to :    
                     </p>
                 </div>
                 <!-- Main Heading Ends -->
                 <!-- Services List Starts -->
                 <div id="services-blocks" class="row">
-                     <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                        <span class="fa fa-bus"></span>
-                        <h4>DELIVER</h4>
+                  
+                
+                    <div data-scroll-reveal="enter bottom and move 50px over 1.8s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                        <span class="fa fa-id-card-alt"></span>
+                        
+                           <h4>DELIVER</h4>
                         <p>
-                            Deliver an authentic, certified, secure and personalized medical pass to eligible travelers.
+                            Deliver an authentic, certified, secure and personalized medical certificate to eligible travelers.
                         </p>
                     </div>
 
@@ -127,18 +124,24 @@
                             <span class="fa fa-link"></span>
                             <h4> CERTIFY</h4>
                             <p>
-                                Certify to third parties that travelers departing from their terminals and dock are travelers with no medical
-                                problem and with a controlled biological risk.
+                                Certify to third parties that travelers departing from their terminals and dock have no health
+                                problem.
                             </p>
                      </div>
 
                     <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
-                            <span class="fa fa-plane"></span>
-                            <h4> VERIFY</h4>
-                            <p>
-                                Verify traveler's medical pass at their departure and arrival.
-			    </p>
+                            <span class="fa fa-fingerprint"></span>
+                            <h4> SECURE</h4>
+                       <p>Identity of the traveler and validity of the traveler-patient pair guaranteed thanks to biometrics.</p>
+
+                       <p>Reliable, certified and secure health data and medical analyzes thanks to biometrics.</p>
                     </div>
+
+                    <!-- <div data-scroll-reveal="enter bottom and move 50px over 1.6s" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 sblock">
+                        <span class="fa fa-server"></span>
+                        <h4> SECURE</h4>
+                        <p> SECURITY </p>
+                    </div> -->
                 </div>
                 <!-- Services List Ends -->
             </div>
@@ -149,16 +152,18 @@
     <section id="contact">
         <div class="container">
             <!-- Main Heading Starts -->
-            <div class="main-head">
+            <!-- <div class="main-head">
                 <h2 data-scroll-reveal="enter top and move 50px over 1.2s" class="MT40">
-                    Please fill out the contact form : </h2>
-            </div>
+            </div> -->
+            <br>
+                                Please fill out the contact form : </h2>
             <!-- Main Heading Ends -->
             <!-- Form & Address Blocks Starts -->
             <div class="center">
+                <br>
                 <!-- Contact Form Starts -->
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <form id="contact-form" class="contact-form" name="contact-form">
+                    <form id="contact-form" class="contact-form" name="contact-form" method="post">
                         
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" required placeholder="Name or Social reason:">
@@ -170,7 +175,7 @@
                         <input type="email" name="email" class="form-control" required placeholder="Contact email:">
                     </div>
                     <div class="form-group">
-                        <button onclick="saveEmail()" class="btn btn-info">Confirm </button>
+                        <button type="submit" class="btn btn-info">Confirm </button>
                     </div>
                     </form>
                 </div>
@@ -192,7 +197,7 @@
             <!-- Copyright Starts -->
             <div data-scroll-reveal="enter bottom and move 50px over 1.2s">
                 <p data-scroll-reveal="enter over 3.2s">
-<p>For any information, please contact :</p>
+                For any information, please contact : </p>
     </div>
     <ul class="info">
         <p><i class="fa fa-user aria-hidden=" true"></i> Vincent TOSSA GBEGO,
@@ -204,12 +209,12 @@
         </p>
         <p><i class="fa fa-phone-square"></i> +&nbsp;33 (0) 6 31 26 65 44</p>
         <p>
-            <i class="fa fa-envelope"></i><a href="#"> tossavincent@yahoo.fr
-            </a>
+            <i class="fa fa-envelope"></i> tossavincent@yahoo.fr
         </p>
         <p>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <a href="https://www.linkedin.com/in/vincent-abdoulaye-tossa-gbego-351b36107"> https://www.linkedin.com/in/vincent-abdoulaye-tossa-gbego-351b36107
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/in/vincent-abdoulaye-tossa-gbego-351b36107">
+            https://www.linkedin.com/in/vincent-abdoulaye-tossa-gbego-351b36107
             </a>
         </p>
     </ul>
@@ -225,40 +230,8 @@
     <script src="js/scrollReveal.js" type="text/javascript"></script>
     <script src="js/jquery.downCount.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDYzKM1NrVpxfq2Ry5Lpot4Zul7ezLgy3M",
-    authDomain: "safety-email-bc1bc.firebaseapp.com",
-    databaseURL: "https://safety-email-bc1bc.firebaseio.com",
-    projectId: "safety-email-bc1bc",
-    storageBucket: "safety-email-bc1bc.appspot.com",
-    messagingSenderId: "847608044094",
-    appId: "1:847608044094:web:3647e575b4a842b6f34f6f",
-    measurementId: "G-CJZ7JNYX4N"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
-//SendEmail
-function saveEmail(email) {
-    var emailObject = {
-        email: email
-    };
-
-    firebase.database().ref('email-entries').push().set(emailObject)
-        .then(function(snapshot) {
-            success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            error(); // some error method
-        });
-}
-
-saveEmail(email);
-</script>
+	
 	
 </body>
 </html>
+
