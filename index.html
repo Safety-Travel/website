@@ -28,6 +28,14 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Fav and touch icons -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>   
+ <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+<!-- <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/fav-144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/fav-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/fav-72.png">
@@ -36,6 +44,8 @@
    
 </head>
 <body>
+     <script src="js/firebase.js" type="text/javascript"></script>
+
     <!-- Preloader Starts -->
     <div class="loader">
     </div>
@@ -170,20 +180,23 @@ Safety Travel is a global, efficient and relevant solution that allows to:
                 <br>
                 <!-- Contact Form Starts -->
                 <div data-scroll-reveal="enter left and move 50px over 1.6s" id="contact-area" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <form id="contact-form" class="contact-form" name="contact-form" method="post">
-                        
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" required placeholder="Name or Social reason ">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="contact" class="form-control" required placeholder="Contact person ">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control" required placeholder="Contact email ">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-info">Confirm </button>
-                    </div>
+                     <form id="contact-form" name="contact-form" method="post">
+
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" required
+                                placeholder="Name or Social reason ">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="contact" class="form-control" id="contact" required
+                                placeholder="Contact person ">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" id="email" required 
+				placeholder="Contact email ">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info">Confirm </button>
+                        </div>
                     </form>
                 </div>
                 <!-- Contact Form Ends -->
@@ -231,20 +244,6 @@ Safety Travel is a global, efficient and relevant solution that allows to:
         integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
         crossorigin="anonymous"></script>
 
-
-<!-- <div id="google_translate_element"> </div>
-
-
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            { pageLanguage: 'en' },
-            'google_translate_element'
-        );
-    }
-    googleTranslateElementInit()
-</script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 </body>
 </html>
