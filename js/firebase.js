@@ -15,13 +15,13 @@ var informations = firebase.database().ref('informations')
 var submitInformations = function () {
   // Get input values from each of the form elements
   var name = $('#name').val()
-  var contact = $('#contact').val()
+  var contacter = $('#contacter').val()
   var email = $('#email').val()
 
   // Push a new recommendation to the database using those values
   informations.push({
     name: name,
-    contact: contact,
+    contacter: contacter,
     email: email,
   })
 }
